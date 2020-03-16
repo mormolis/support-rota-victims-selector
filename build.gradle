@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'com.multipartyloops'
+version '0.0.1'
+
+repositories {
+    mavenCentral()
+}
+
+
+application {
+    mainClassName = 'ApplicationRunner'
+}
+
+run{
+    standardInput = System.in
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.mockito', name: 'mockito-core', version: '2.1.0'
+}
